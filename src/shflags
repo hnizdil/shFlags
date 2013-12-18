@@ -832,7 +832,7 @@ FLAGS()
 
   [ ${flags_return} -eq ${FLAGS_ERROR} ] && _flags_fatal "${flags_error}"
 
-  export POSIXLY_CORRECT=0
+  unset POSIXLY_CORRECT
 
   return ${flags_return}
 }
